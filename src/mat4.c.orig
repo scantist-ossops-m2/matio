@@ -408,8 +408,6 @@ Mat_VarReadNextInfo4(mat_t *mat)
     if ( !err ) {
         Mat_VarFree(matvar);
         return NULL;
-    } else {
-        matvar->name[tmp - 1] = '\0';
     }
 
     matvar->internal->datapos = ftell(mat->fp);
